@@ -1,0 +1,43 @@
+{% extends  'incl/base.html' %}
+{% block content %}
+
+
+    <h2 class="mx-4">Registration</h2>
+    <div class = "error mx-4 my-3">
+        Sorry, this email address already registered!
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6 mx-4 my-3">
+            <label for="login_reg" class = "my-3">Login</label>
+            <input  class="form-control" id="login_reg" placeholder="Enter your login">
+        </div>
+        <div class="form-group col-md-6 mx-4 my-3">
+            <label for="email" class = "my-3">Email</label>
+            <input  class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group col-md-6 mx-4 my-3">
+            <label for="nickname" class = "my-3">NickName</label>
+            <input  class="form-control" id="nickname" placeholder="Choose nickname">
+        </div>
+        <div class="form-group col-md-6 mx-4 my-3">
+            <label for="password" class = "my-3">Password</label>
+            <input  class="form-control" id="password" placeholder="Enter your password">
+        </div>
+        <div class="form-group col-md-6 mx-4 my-3">
+            <label for="rep_password" class = "my-3">Repeat password</label>
+            <input  class="form-control" id="rep_password" placeholder="Repeat your password">
+        </div>
+        <div class="form-group col-md-6 mx-4 my-3">
+            <label class="form-label" for="rep_avatar" class = "my-3">Select file for avatar...</label>
+            <input type="file" class="form-control my-3" id="rep_avatar" />
+        </div>
+
+
+
+        <button type="register" class="btn btn-dark mx-4 my-3">Register!</button>
+
+    </div>
+
+{% endblock content%}
+
+

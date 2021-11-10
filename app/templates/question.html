@@ -1,0 +1,17 @@
+{% extends  'incl/base_with_pagination.html' %}
+{% load static %}
+{% block content %}
+
+    {% include 'incl/main_que.html' %}
+    {% for answer in post %}
+        {% include 'incl/answer.html' %}
+    {% endfor %}
+
+
+    <div class="form-group mx-5 my-3">
+        <label for="answer" class = "my-3">Enter your answer</label>
+        <textarea class="form-control" id="answer" rows="6"></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark mx-5 my-3">Answer</button>
+{% endblock content %}
+
